@@ -1,0 +1,98 @@
+/*顶部搜索栏样式*/
+.head{
+	height: 40px;
+	line-height: 40px;
+	background: red;
+	color: #fff;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom:10px; 
+}
+.head .login{
+	padding-left:20px; 
+	padding-right: 15px;
+}
+.c input{
+	width: 100%;
+	border-radius: 5px;
+}
+.head span{
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	align-self:center;
+}
+.head .city{
+	
+	padding-right:36px;
+	background: url(../img/city_change.png) no-repeat 45px 18px; 
+	background-size:16px 12px;
+}
+
+.head .search{
+	height: 20px;
+	background:#fff url(../img/search_class.png) no-repeat 2px 5px;
+	background-size: 12px 12px;
+	padding-left: 15px;
+}
+
+/*导航栏*/
+.navs{
+	text-align: center;
+	background: #fff;
+	margin-bottom:10px; 
+}
+.navs li{
+	border-left: 1px solid #ccc;
+}
+
+/*评论栏*/
+.pinglun{
+	background: #fff;
+	padding: 0 10px;
+	margin-bottom:15px; 
+}
+.pinglun h2{
+	color: #333;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+}
+
+
+.speak1{
+	display: flex;
+	border-top:1px dashed #ccc; 
+	border-bottom:1px dashed #ccc; 
+	padding: 10px 0;
+
+}
+
+
+.speak1 .say p{
+	height: 25px;
+	line-height: 25px;
+	color: #666;
+	font-weight: bold;
+}
+.speak1 .say .thismony{
+	color: #f40;
+	font-size: 16px;
+	font-weight: bold;
+}
+.speak1 .say .thispel{
+	color: #f40;
+	font-weight: bold;
+}
+
+.speak1 .imgbox{
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+}
+.speak1 .imgbox img{
+	width: 60px;
+	height: 60px;
+}
+.lis1{
+	width: 80px;
+}

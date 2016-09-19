@@ -1,0 +1,127 @@
+/*结构样式*/
+.l-center-r{  /*...................................左中右样式................................*/
+	display: flex;
+	justify-content:space-between;
+	padding: 5px;
+}
+.c{
+	flex:1 1 auto;
+}
+
+.u-img-d-txt{/*...................................上图下字样式................................*/
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width: 100%;
+
+}
+.u-img-d-txt>li{
+	flex:1 1 auto;
+	padding: 3px;
+}
+
+.u-img-d-txt>li>a{
+	width: 100%;
+	display: flex;
+	flex-direction:column;
+	text-align: center;
+	position: relative;
+}
+
+.u-img-d-txt>li>a>.imgbox{
+	order:1;
+}
+
+.u-img-d-txt>li>a>.imgbox img{
+	width: 100%;
+}
+
+.u-img-d-txt>li>a>.txtbox{
+	order:2;
+}
+
+.reverse >li >a > .txtbox{/*------------------------- 翻转 文字与图片---------**/
+	order:1;
+}
+.reverse >li >a > .imgbox{
+	order:2;
+}
+
+.l-txt-r-img{ /*...............................左字右图样式....................*/
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width: 100%;
+}
+.l-txt-r-img>li{
+	flex:1 1 auto;
+	border: 1px solid #eee;
+}
+
+.l-txt-r-img>li>a{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	text-align: center;
+}
+.l-txt-r-img>li>a>.txtbox{
+	align-self:center;
+	
+}
+
+.l-txt-r-img>li>a>.txtbox p{
+	text-align: center;
+	padding-left:10px; 
+}
+
+.l-txt-r-img>li>a>.imgbox{
+	order:2;
+}
+
+.l-txt-r-img>li>a>.imgbox img{
+	width: 100%;
+}
+
+.l-txt-r-img>li>a>.txtbox{
+	order:1;
+}
+
+.reverse >li >a > .txtbox{/*------------------------- 翻转 文字与图片---------**/
+	order:2;
+}
+.reverse >li >a > .imgbox{
+	order:1;
+}
+.pic{ /*...............................图片并行排列(元素平均分配)..........................*/
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width: 100%;
+
+}
+
+.pic>li>a>img{
+	width: 100%; 
+}
+
+.flex{/*........................................平局分.....................................*/
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	width: 100%;
+}
+
+.flex>.item{
+	flex:1 1 auto;
+	width: 100%;
+}
+
+.flexcol{/*.............................................上下结构..........................*/
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+
+.flexcol>.itemcol{
+	flex:1 1 auto;
+}

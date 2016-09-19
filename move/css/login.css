@@ -1,0 +1,98 @@
+/*顶部搜索栏样式*/
+.head{
+	height: 40px;
+	line-height: 40px;
+	background: red;
+	color: #fff;
+	font-size: 16px;
+	width: 100%;
+
+}
+.head .login{
+	width: 20px;
+	height: 5px;
+	background: url(../img/icon_btn_index.png) no-repeat 0px 4px; 
+	background-size:20px 5px;
+	
+}
+
+.head span{
+	display: inline-block;
+	padding: 5px 10px 5px 30px;
+	align-self:center;
+
+}
+.head .city{
+	margin-left: 10px;
+	width: 9px;
+	height: 14px;
+	background: url(../img/search_back.png) no-repeat 0px 3px; 
+	background-size:9px 14px;
+}
+/*头部样式*/
+
+.forms{
+	width: 100%;
+	display: block;
+	margin: 10px auto;
+	padding: 0 20px 0 20px;position: relative;
+}
+
+.forms input{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left:30px;
+	border-radius: 10px;
+	
+}
+
+
+.forms .input1{
+	content: "";
+	display: block;
+	width: 24px;
+	height: 35px;
+	position: absolute;
+	left: 24px;
+	top: 4px;
+	background: url(../img/login_mobile.png) no-repeat 0 0; 
+	background-size:20px 30px; 
+}
+
+.forms .input11{
+	display: block;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	right: 24px;
+	top: 8px;
+	background: url(../img/9c5084c2e6f6a04ba0ad4b73565636be.png) no-repeat 0 0; 
+	background-size:100px 30px; 
+	border-radius: 10px;
+}
+
+.forms .input2{
+	content: "";
+	display: block;
+	width: 24px;
+	height: 35px;
+	position: absolute;
+	left: 24px;
+	top: 54px;
+	background: url(../img/login_lock.png) no-repeat 0 0; 
+	background-size:20px 30px; 
+}
+
+.forms .input3{
+	margin: 20px 5px;
+	height: 14px;
+	width: 14px;
+	text-align: left;
+	
+}
+
+.forms .input4{
+	padding-left:0; 
+}
+

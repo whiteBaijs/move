@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/swipe.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/zepto.js"></script>
+	<script src="js/event.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/iscroll.js"></script>
+
+	<script src="js/swipe.js"></script>
+	<script src="js/index.js"></script>
+
+	<style type="text/css">
+/*		.iscrollbox{
+			/*height:400px;*/
+			width:100%;
+			position:relative;
+			overflow:hidden;
+		}
+		.iscrollcontent{
+			position:absolute;
+		}*/
+	</style>
+	
+	<title>移动端网站</title>
+</head>
+<body>
+	<!-- 头部start -->
+	<div class="topone">
+		<header class="l-center-r head">
+			<span class="city">北京</span>
+			<form action="" class="c">
+				<input type="text" class="search" placeholder="搜索、课程、机构">
+			</form>
+			<span class="login">登录</span>
+		</header>
+	</div>
+
+	<!-- 头部end -->
+
+	<!-- <div class="iscrollbox ">
+		<div class="iscrollcontent">	 -->			
+			<!-- 轮播start -->
+			<section class="swipewarp">
+				<div id="swipeBox" class="swipe">
+					<div class="swipe-wrap">
+						<div>
+							<a href="#"><img src="img/swipe/banner_test.jpg" /></a>
+						</div>
+						<div>
+							<a href="#"><img src="img/swipe/banner_test1.jpg" /></a>
+						</div>
+						<div>
+							<a href="#"><img src="img/swipe/banner_test2.jpg" /></a>
+						</div>
+					</div>
+
+					<ul class="indrector">
+						<li class="cur"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+
+				<script>
+					Swipe(document.getElementById('swipeBox'),{
+						"startSlide":0,
+						"auto":2000,
+						"callback":function(e,item){
+							//console.info(e,item);
+							//去除全部的的li的cur。
+							//给当前的li添加ur
+							$(".indrector").find("li").removeClass("cur").eq(e).addClass("cur");
+						}  
+					});
+				</script>
+			</section>
+			<!-- 轮播end -->
+
+			<!-- 按钮导航start -->
+			<nav  class="naviconwarp1">
+				<ul class="u-img-d-txt">
+					<li>
+						<a href="">
+							<div class="imgbox"><img style="" src="img/navicon/class_img01.png" alt=""></div>
+							<div class="txtbox">
+								<p>艺术</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/navicon/class_img02.png" alt=""></div>
+							<div class="txtbox">
+								<p>体育</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/navicon/class_img03.png" alt=""></div>
+							<div class="txtbox">
+								<p>小学</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/navicon/class_img04.png" alt=""></div>
+							<div class="txtbox">
+								<p>初中</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="u-img-d-txt">
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/navicon/class_img05.png" alt=""></div>
+							<div class="txtbox">
+								<p>艺术</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/navicon/class_img06.png" alt=""></div>
+							<div class="txtbox">
+								<p>体育</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/navicon/class_img07.png" alt=""></div>
+							<div class="txtbox">
+								<p>小学</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/navicon/class_img08.png" alt=""></div>
+							<div class="txtbox">
+								<p>初中</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+							
+			</nav>
+			<!-- 按钮导航end -->
+
+			<!-- 限时优惠start -->
+			<section class="xianshiyouhui">
+				<h1 class="l-center-r ">
+					<span>限时优惠</span>
+					<a href="">更多>></a>
+				</h1>
+				<ul class="u-img-d-txt">
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/favorable_1.jpg" alt=""></div>
+							<div class="txtbox">
+								<p>小学</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/favorable_2.jpg" alt=""></div>
+							<div class="txtbox">
+								<p>初中</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- 限时优惠end -->
+
+			<!-- 中小学start -->
+			<section class="midschool">
+				<h2 class="l-center-r ">
+					<span>中小学</span>
+					<a href="">更多>></a>
+				</h2>
+				<ul class="u-img-d-txt">
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/midschool/cls_mid1.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>高一英语</p>
+							</div>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/midschool/cls_mid2.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>8人课后托管班</p>
+							</div>
+						</a>	
+					</li>
+				</ul>
+
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>初一数学</p></div>
+							<div class="imgbox"><img src="img/midschool/cls_icon_mid1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>中等英语</p></div>
+							<div class="imgbox"><img src="img/midschool/cls_icon_mid2.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>初一数学</p></div>
+							<div class="imgbox"><img src="img/midschool/cls_icon_mid3.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>中等英语</p></div>
+							<div class="imgbox"><img src="img/midschool/cls_icon_mid4.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- 中小学end -->
+
+			<!-- 艺术体育start -->
+			<section class="midschool">
+				<h2 class="l-center-r ">
+					<span>艺术/体育</span>
+					<a href="">更多>></a>
+				</h2>
+				<ul class="u-img-d-txt">
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/art/cls_art1.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>寒假创意美术班</p>
+							</div>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/art/cls_art2.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>电子琴初级班</p>
+							</div>
+						</a>	
+					</li>
+				</ul>
+
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>钢琴</p></div>
+							<div class="imgbox"><img src="img/art/cls_icon_art1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>古筝</p></div>
+							<div class="imgbox"><img src="img/art/cls_icon_art2.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>吉他</p></div>
+							<div class="imgbox"><img src="img/art/cls_icon_art3.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>巴扬琴</p></div>
+							<div class="imgbox"><img src="img/art/cls_icon_art4.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- 艺术体育end -->
+
+			<!-- 语言留学start -->
+			<section class="midschool">
+				<h2 class="l-center-r ">
+					<span>语言/留学</span>
+					<a href="">更多>></a>
+				</h2>
+				<ul class="u-img-d-txt">
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/midschool/recommend_language_study1.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>Ele-Babies(2.5岁-3...</p>
+							</div>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/midschool/recommend_language_study2.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>Ele-Toddlers(3岁-6...</p>
+							</div>
+						</a>	
+					</li>
+				</ul>
+
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>雅思</p></div>
+							<div class="imgbox"><img src="img/midschool/language_study1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>托福</p></div>
+							<div class="imgbox"><img src="img/midschool/language_study2.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>外教口语</p></div>
+							<div class="imgbox"><img src="img/midschool/language_study3.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>葡萄牙语</p></div>
+							<div class="imgbox"><img src="img/midschool/language_study4.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- 语言留学end -->
+
+			<!-- 拓展训练start -->
+			<section class="midschool">
+				<h2 class="l-center-r ">
+					<span>拓展/训练</span>
+					<a href="">更多>></a>
+				</h2>
+				<ul class="u-img-d-txt">
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/midschool/recommend_camp1.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>彩虹桥蒙式英语夏令营（两周结课）</p>
+							</div>
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<div class="imgbox"><img src="img/midschool/recommend_camp2.jpg" alt=""></div>
+							<div class="txtbox udp">
+								<p>生活试飞夏令营2班</p>
+							</div>
+						</a>	
+					</li>
+				</ul>
+
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>冬夏令营</p></div>
+							<div class="imgbox"><img src="img/midschool/camp1.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>室内场馆</p></div>
+							<div class="imgbox"><img src="img/midschool/camp2.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+				<ul class="l-txt-r-img">
+					<li>
+						<a href="">
+							<div class="txtbox"><p>亲子出游</p></div>
+							<div class="imgbox"><img src="img/midschool/camp3.jpg" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txtbox"><p>采摘农家</p></div>
+							<div class="imgbox"><img src="img/midschool/camp4.jpg" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- 拓展训练end -->
+
+			<!-- 逛机构start -->
+			<section class="gujigou">
+				<h2 class="l-center-r ">
+					<span>逛机构</span>
+					<a href="">更多>></a>
+				</h2>
+				<ul class="pic">
+					<li>
+						<a href="">
+							<img src="img/midschool/f4ae79388c2579a56438efe8249f8af4.jpg" alt="">
+						</a>
+						
+					</li>
+					<li>
+						<a href="">
+							<img src="img/midschool/b01f7477d5efd5ed5e7b6d3c738d4c17.jpg" alt="">
+						</a>	
+					</li>
+					<li>
+						<a href="">
+							<img src="img/midschool/112d3a0c82c0d27535f23c05ffb48680.jpg" alt="">
+						</a>	
+					</li>
+					<li>
+						<a href="">
+							<img src="img/midschool/8ff8fb118261a2ca2aa013a4cd2d3635.jpeg" alt="">
+						</a>	
+					</li>
+				</ul>
+
+			</section>
+			<!-- 逛机构end -->
+	<!-- 	</div>
+	</div> -->
+	<!-- 底部start -->
+	<footer>
+		<p class="foot-one">
+			<span>登录</span><i>|</i><span>注册</span><i>|</i><span>反馈</span><i>|</i><span>帮助</span>
+		</p>
+
+		<p class="foot-two">
+			<a href="">app</a><a href="" class="reds">触屏版</a><a href="">电脑版</a>
+		</p>
+
+		<p class="foot-three">Copyright 报哪好 m.baonahao.com</p>
+		
+	</footer>
+	<!-- 底部end -->
+	<!-- 设置回到顶部按钮 -->
+	<!-- <div id="gotoTop" style="position:fixed;bottom:50px;right:10px;background:red;">回到顶部</div> -->
+	<!-- 设置回到顶部按钮 -->
+
+	<script type="text/javascript">
+
+	// //设置滚动区域的高度
+	
+	// console.info($(window).height(),$(".iscrollbox").offset().top,$("footer").height());
+
+	// 	$(".iscrollbox").height($(window).height() -  $(".iscrollbox").offset().top - $("footer").height());
+	// 	var s = new IScroll($(".iscrollbox")[0]);
+
+	// 	s.on("scrollEnd",function(){
+	// 		if(Math.abs( s.y ) > 200 ){
+	// 			$("#gotoTop").show();
+	// 		}
+	// 		else{
+	// 			$("#gotoTop").hide();
+	// 		}
+	// 		console.info(s);
+	// 	});
+
+	// 	$("#gotoTop").on("tap",function(){
+	// 		s.scrollTo(0,0,1000);  //scrollTo是iscroll.js插件提供的方法
+	// 		// x方向的位置,y方向的位置,时间间隔
+	// 		// 1s内回到顶部（Y=0）
+	// 	})
+	</script>
+
+
+</body>
+</html>

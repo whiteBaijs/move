@@ -1,0 +1,74 @@
+/*公共样式*/
+/*底部样式*/
+.foot-one{
+	font-size: 16px;
+	color: #333;
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	background: #fff;
+	width: 100%;
+	height: 30px;
+
+}
+.foot-one span{
+	padding: 5px;
+}
+.foot-one i{
+	padding: 5px 0;
+}
+
+.foot-two{
+	font-size: 16px;
+	color: #333;
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	width: 100%;
+	height: 30px;
+}
+
+.foot-two a{
+	padding: 20px 10px;
+}
+
+.reds{
+	color:red;
+}
+.foot-three{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	color: #999;
+	padding:20px 0; 
+}
+
+
+
+/*吸顶样式*/
+
+   .iscrollbox{
+            /*height:400px;*/
+            width:100%;
+            position:relative;
+            overflow:hidden;
+        }
+    .iscrollcontent{
+        width: 100%;
+        position:absolute;
+    }
+
+    #gotoTop{
+    	position:fixed;bottom:40px;right:10px;display:none;
+		background: url(../img/nav.jpg) no-repeat 0 0;
+		width: 36px;
+		height: 65px;
+    }
+
+   /*左边背景图右边文字*/
+  .l-bgpic-txt{
+	font-size: 16px;
+	color: #333;
+	padding-left: 18px;
+	background-size: 16px 16px;
+}
